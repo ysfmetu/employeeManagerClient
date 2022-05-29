@@ -1,0 +1,9 @@
+<h3 style="text-align: center">Create Employee</h3>
+name: <input type="text" [ngModel]="name">
+email: <input type="text" [ngModel]="email">
+title: <input type="text" [ngModel]="jobTitle">
+phone: <input type="text" [ngModel]="phone">
+resim: <input type="text" [ngModel]="imageUrl">
+<button (click)="createEmployee(
+{'name':name,'email':email,'jobTitle':jobTitle,'phone':phone,'imageUrl':imageUrl})">kayıt</button>
+{{responseEmpObj|json}}

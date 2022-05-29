@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {EmployeeServiceService} from "../../services/employee-service.service";
 
 @Component({
-  selector: 'app-listof-employee',
+  selector: 'app-listAll',
   templateUrl: './listof-employee.component.html',
   styleUrls: ['./listof-employee.component.css']
 })
