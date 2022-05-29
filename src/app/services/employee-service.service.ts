@@ -18,10 +18,11 @@ export class EmployeeServiceService {
   public updateEmp(employee:any):any{
     return this.http.put(this.url+"update",employee)
   }
-  public deleteEmp(id:number):any{
-    return this.http.delete(this.url +"/"+id)
-  }
   public getEmpl(id:number):any{
     return this.http.get(this.url+"find/"+id)
   }
+  public deleteEmp(id:number):any{
+    return this.http.delete(this.url +"/"+id)
+  }
+
 }
