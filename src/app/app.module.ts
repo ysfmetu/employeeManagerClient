@@ -10,6 +10,7 @@ import { CreateComponent } from './components/create/create.component';
 import { UpdateComponent } from './components/update/update.component';
 import { FetchComponent } from './components/fetch/fetch.component';
 import { DeleteComponent } from './components/delete/delete.component';
+import {AppRouterModule} from "./routing.module";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DeleteComponent } from './components/delete/delete.component';
     imports: [
         BrowserModule,
         HttpClientModule,
-        FormsModule
+        FormsModule,
+        AppRouterModule
     ],
   providers: [EmployeeServiceService],
   bootstrap: [AppComponent]
