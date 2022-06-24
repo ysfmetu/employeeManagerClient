@@ -12,16 +12,16 @@ export class CreateComponent implements OnInit {
   public jobTitle: any;
   public phone: any;
   public imageUrl: any;
-  public employeeCode: any;
+/*  public employeeCode: any;*/
 
   public responseEmpObj:any;
 
-  constructor(private empService:EmployeeServiceService) { }
+  constructor(private _service:EmployeeServiceService) { }
 
   ngOnInit(): void {
   }
   public createEmployee(empObj:any):any{
-    return this.empService.createEmp(empObj).subscribe(
+    return this._service.createEmp(empObj).subscribe(
       (res:any)=>{this.responseEmpObj=res}
     )
   }

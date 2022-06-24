@@ -8,12 +8,13 @@ import {EmployeeServiceService} from "../../services/employee-service.service";
 })
 export class DeleteComponent implements OnInit {
   public deleteResponse:any;
-  constructor(private empService:EmployeeServiceService) { }
+  public id:any;
+  constructor(private _service:EmployeeServiceService) { }
 
   ngOnInit(): void {
   }
   public deleteEmployee(id:number):any{
-    return this.empService.deleteEmp(id).subscribe(
+    return this._service.deleteEmp(id).subscribe(
       (res:any)=>{this.deleteResponse=res}
     )
   }

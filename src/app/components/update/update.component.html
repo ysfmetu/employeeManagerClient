@@ -1,1 +1,8 @@
-<p>update works!</p>
+<h3 style="text-align: center">Update Employee</h3>
+name: <input type="text" [ngModel]="name">
+email: <input type="text" [ngModel]="email">
+phone: <input type="text" [ngModel]="phone">
+
+<button (click)="updateEmployee(
+{'name':name,'email':email,'phone':phone})">Güncelle</button>
+{{updateResponse|json}}

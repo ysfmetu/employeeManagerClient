@@ -8,8 +8,6 @@ import {EmployeeServiceService} from "./services/employee-service.service";
 })
 export class AppComponent {
 
-
-
   public getAllResponse:any;
 
   constructor(private empService:EmployeeServiceService) {

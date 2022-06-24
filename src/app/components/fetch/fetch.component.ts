@@ -8,12 +8,13 @@ import {EmployeeServiceService} from "../../services/employee-service.service";
 })
 export class FetchComponent implements OnInit {
   public getEmpResponse:any;
-  constructor(private empService:EmployeeServiceService) { }
+  public id:any;
+  constructor(private _service:EmployeeServiceService) { }
 
   ngOnInit(): void {
   }
   public getEmployee(id:number):any{
-    return this.empService.getEmpl(id).subscribe(
+    return this._service.getEmpl(id).subscribe(
       (res:any)=>{this.getEmpResponse=res}
     )
   }
